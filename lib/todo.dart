@@ -1,16 +1,15 @@
-class Todo{
+class Todo {
   final int id;
   String title;
   bool isDone;
   static int _counter = 0;
-  Todo(this.title):id = ++_counter,isDone=false;
+  Todo(this.title) : id = ++_counter, isDone = false;
   @override
   String toString() {
     String status;
-    if(isDone){
+    if (isDone) {
       status = '[x]';
-    }
-    else{
+    } else {
       status = '[ ]';
     }
     return '$status $id. $title';
